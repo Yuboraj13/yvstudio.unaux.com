@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Login.html
+        </title>
+        <style>
+        </style>
+    <meta name="author" content="Yuboraj">
+    <meta name="keyword" content="web template,apps,android,windows,java">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/website/public/Styles/download.css">
+    <link rel="manifest" href="/website/package-lock.json">
+    </head>
+    <body style="background-color:rgb(25, 180, 207);">
+        <p id="header">Yv Studio</p>
+
+       <div id="menubar">
+        <table border="0" style="width:100%; height: 100px;">
+            <tr>
+                <td><a href="/website/index.html" target="_self">Home&nbsp;&nbsp;&nbsp;</a></td>
+                <td><a href="/website/src/template.html" target="_self">Web template</a></td>
+                <td><a href="/website/src/apps.html" target="_self">Apps corner</a></td>
+                <td><a href="/website/src/contacts.html" target="_self">Contacts</a></td>
+            </tr>
+        </table>
+    </div>
+    <div id="sider"></div>
+    <div id="content1" style="margin-left: 350px;">
+        <div id="content">
+        
+           
+<code> 
+<p style="margin-left: 160px;">Hear are an example of HTML signin page</p>
+            <textarea value="signin.html" id="signin.html" cols="50" rows="16" title="signup.html" disabled>
+            
+                                    <fieldset legend="Sign In" aligen="center" width="300" height="300">
+                1.<b>Name:<br></b>
+                <input type="text" value="First Name:"></input><br><br>
+                <input type="text" value="Last Name:"></input><br><br>
+                2.<b>Password:</b><br>
+                <input type="password" ></input><br><br>
+                <button type="sumbit">Sign In</button>
+                </fieldset>
+            </textarea>
+</code></div>
+    </div><div style="float: left; margin-right: 40px;">
+                
+    
+     <div style="margin-left: 450px;"><br><br><br>
+        <button onclick="copyText()" id="dow">Copy Text</button>
+        <button title="Preview this code" id="pre" class="ball">
+            <a href="/website/recources/previews/sing in.htm">Preview</a>
+          </button>&nbsp;&nbsp;&nbsp;
+        </div></div>
+    <div id="footer"></div>
+    <script>
+        function copyText() {
+          /* Get the text area */
+          var copyText = document.getElementById("signin.html");
+        
+          /* Select the text area */
+          copyText.select();
+          copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        
+          /* Copy the text inside the text area */
+          document.execCommand("copy");
+        
+          /* Alert the copied text */
+          alert("Copied to clipboard ");
+        }
+        </script>
+        
+    </body>
+</html>

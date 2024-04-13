@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<title>Sign In</title>
+<link rel="stylesheet" href="/website/public/Downloads/Content2/Content1.css">
+<link rel="script" href="/website/public/scripts/script.js">
+<link rel="manifest" href="/website/package-lock.json">
+<body>
+<fieldset legend="Sign In" aligen="center" width="300" height="300">
+1.<b>Name:<br></b>
+<input type="text" id="fsname" value="First Name:" pattern="(?=.*[a-z])(?=.*[A-Z]).{8,}"required></input><br><br>
+<input type="text" id="lsname" value="Last Name:" pattern="(?=.*[a-z])(?=.*[A-Z]).{8,}"required></input><br><br>
+2.<b>Password:</b><br>
+<input id="pass" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"required></input><br><br>
+<input type="submit" value="sign in">
+</fieldset>
+</body>
+</html>
+

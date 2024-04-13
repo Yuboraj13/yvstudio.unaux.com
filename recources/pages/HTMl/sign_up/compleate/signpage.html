@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>
+            Signup.html
+        </title>
+        <style>
+
+        </style>
+<meta name="author" content="Yuboraj">
+<meta name="keyword" content="web template,apps,android,windows,java">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="manifest" href="/website/package-lock.json">
+<link rel="stylesheet" href="/website/public/Styles/download.css">
+    </head>
+    <body style="background-color:rgb(25, 180, 207);">
+      <p id="header">Yv Studio</p>
+       <div id="menubar">
+        <table border="0" style="width:100%; height: 100px;">
+            <tr>
+                <td><a href="/website/index.html" target="_self">Home&nbsp;&nbsp;&nbsp;</a></td>
+                <td><a href="/website/src/template.html" target="_self">Web template</a></td>
+                <td><a href="/website/src/apps.html" target="_self">Apps corner</a></td>
+                <td><a href="/website/src/contacts.html" target="_self">Contacts</a></td>
+            </tr>
+        </table>
+    </div>
+    <div id="sider"></div><code>
+    <div id="content1"><p style="margin-left: 550px;">Hear are an example of HTML signup page</p>
+        <div id="content" >
+            
+           
+            
+            <textarea value="signup.html" id="signup.html" cols="70" rows="25" title="signup.html" style="margin-left:450px;" disabled>
+            
+     <fieldset legend="Sign Up" aligen="center" width="300" height="300" required>
+        1.<label for="E-mail"><b>E-mail</b></label>
+        
+        <input type="text" id="E-mail" title="Your E-mail is required" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"required><br><br>
+        
+        2.<label for="Gender"><b>Gender</b></label>
+        <input type="radio" name="gender" value="Male" id="gender">Male
+        <input type="radio" name="gender" value="Female" id="gender">Female
+        <input type="radio" name="gender" value="Other" id="gender">Other
+        <br>
+        3.<label for="bdate "><b>birth date:</b></label><br><br>
+        <label for="bdateing "><i>Date</i></label><br>
+        <form id="bdate" required>
+        <select id="bdating">
+        <option value="Select date" default="">Select date</option>
+        <option value="01">01</option>
+        <option value="02">02</option>
+        <option value="03">03</option>
+        <option value="04">04</option>
+        <option value="05">05</option>
+        <option value="06">06</option>
+        <option value="07">07</option>
+        <option value="08">08</option>
+        <option value="09">09</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option>
+        </select><br>
+        
+         <label for="bmonth"><i>Month</i><br></label>
+        
+        <select id="bmonth">
+        <option value="Select Month" default="January">Select Month</option>
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="September">September</option>
+        <option value="October">October</option>
+        <option value="November">November</option>
+        <option value="December">December</option>
+        </select><br>
+        
+         <label for="year"><i>Year</i><br></label>
+        
+        <input type="number" name="year" id="year" required><br><br>
+        </fieldset>
+        
+        </form>
+        <br>
+        
+        </div>
+        <form action="">
+          <input type="submit" value="cancel" id="cnc">
+        </form>
+        <form action="/website/recources/previews/password.htm">
+          <input type="submit" value="Next">
+        </form>
+        <!-- <button id="cnc"><a href="">cancel</a></button>
+        <button id="nxt"><a href="/website/recources/previews/password.htm">Next</a></button>-->
+        
+        
+        
+        <div id="message">
+          <h3>This form must contain the following:</h3>
+          <p id="E-mail" class="invalid">A <b>lowercase</b> letter</p>
+          <p id="Gender" class="invalid">A <b>capital (uppercase)</b> letter</p>
+          <p id="byear" class="invalid">A <b>1952-2023</b></p>
+          <p id="bdating" class="invalid">1-31</p>
+        <p id="bmonth" class="invalid">January-December</p>
+        </div>
+        
+        
+        
+        
+        <script>
+          var myInput = document.getElementById("E-mail");
+          var myInput = document.getElementById("Gender");
+          var select = document.getElementById("bdating");
+          var select = document.getElementById("bmonth");
+          var number = document.getElementById("byear");
+          
+          
+          
+          myInput.onblur = function() {
+            document.getElementById("message").style.display = "none";
+          }
+          myInput.onkeyup = function()
+          
+          
+          
+          {
+           
+            var email = /[@]/g;
+            if(myInput.value.match(email)) {  
+              email.classList.remove("valid");
+              email.classList.add("invalid");
+            } else {
+              email.classList.remove("invalid");
+              email.classList.add("valid");
+            }
+          
+          
+            var gender = /[male]/g;
+            if(myInput.value.match(gender)) {  
+              gender.classList.remove("valid");
+              gender.classList.add("invalid");
+            } else {
+              gender.classList.remove("invalid");
+              gender.classList.add("valid");
+            }
+          
+          
+          
+            var gender = /[female]/g;
+            if(myInput.value.match(gender)) {  
+              number.classList.remove("valid");
+              number.classList.add("invalid");
+            } else {
+              number.classList.remove("invalid");
+              number.classList.add("valid");
+            }
+          
+          
+            var gender = /[other]/g;
+            if(myInput.value.match(gender)) {  
+              number.classList.remove("invalid");
+              number.classList.add("valid");
+            } else {
+              number.classList.remove("valid");
+              number.classList.add("invalid");
+            }
+          
+          
+          
+          
+            var bdateing = /[01-31]/g;
+            if(myInput.value.match(bdating)) {  
+              number.classList.remove("invalid");
+              number.classList.add("valid");
+            } else {
+              number.classList.remove("valid");
+              number.classList.add("invalid");
+            }
+          
+          
+          if(myInput.value.length >= 0o1) {
+              length.classList.remove("valid");
+              length.classList.add("invalid");
+            } else {
+              length.classList.remove("invalid");
+              length.classList.add("valid");
+            }
+           
+          
+          if(myInput.value.length <= 31) {
+              length.classList.remove("valid");
+              length.classList.add("invalid");
+            } else {
+              length.classList.remove("invalid");
+              length.classList.add("valid");
+            }
+           
+           
+           var byear = /[01-2023]/g;
+            if(myInput.value.match(byear)) {  
+              number.classList.remove("invalid");
+              number.classList.add("invalid");
+            } else {
+              number.classList.remove("invalid");
+              number.classList.add("invalid");
+            }
+          
+           if(myInput.value.length > 2023) {
+              length.classList.remove("invalid");
+              length.classList.add("valid");
+            } else {
+              length.classList.remove("valid");
+              length.classList.add("invalid");
+            }
+          
+          
+           if(myInput.value.length <1956) {
+              length.classList.remove("invalid");
+              length.classList.add("valid");
+            } else {
+              length.classList.remove("valid");
+              length.classList.add("invalid");
+            }
+          
+          }
+          
+        </script>
+            </textarea></code></div>
+    </div>
+          </div>
+           
+          <button  title="copy this code" onclick="copyText()" style="width: 100px; height: 75px; background-color:  rgb(96, 247, 9); margin-left: 590px;">
+              Copy
+            </button>
+            <button title="Preview this code"  style="width: 100px; height: 75px; background-color:  rgb(96, 247, 9);">
+                <a href="/website/recources/previews/HTML_signup.html">Preview</a>
+              </button>&nbsp;&nbsp;&nbsp;
+<div id="footer">
+  <p style="text-align: center;">Yv studio</p>
+  <a href="/website/src/log.html" style="margin-left:10% ;color: white;">View update log</a><a href="/website/sitemap.hlp" download="sitemap.md" style=" float:right;margin-right:10% ;color: white;">view Sitemap</a>
+  <br><a href="#menubar" style="margin-left:10%; color: white;">Go to top</a>
+  <a href="/website/README.md" download="README.md" style=" float:right;margin-right:10% ;color: white;">Need help</a>
+ <a href="http://yvstudio.unaux.com/" style="color: white;" id="p"><p style="text-align: center;">Developed by:  &copy;Yuboraj</p></a></div>            
+                <script>
+                  function copyText() {
+    /* Get the text area */
+    var copyText = document.getElementById("signup.html");
+  
+    /* Select the text area */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /* For mobile devices */
+  
+    /* Copy the text inside the text area */
+    document.execCommand("copy");
+  
+    /* Alert the copied text */
+    alert("Copied to clipboard ");
+  }
+  
+                </script>
+    </body>
+</html>

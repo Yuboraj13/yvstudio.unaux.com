@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)file:///C:/Users/User/Documents/Signup.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+button{
+margin:left;
+}
+button#nxt {
+background-color:lightblue;
+color:white;
+}
+select {
+background-color:lightgray;
+height: 40%;
+}
+input#date {
+width: 20%;
+height: 20%;
+}
+input#yer {
+width: 20%;
+height: 20%;
+}
+/* Style all input fields */
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Style the container for inputs */
+.container {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "done";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+</style>
+<title>Sign Up</title>
+</head>
+<body>
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+<fieldset legend="Sign Up" aligen="center" width="300" height="300" required="">
+<div required="">
+<action="http: www.gmail.com"="">
+<form id="phn"></form>
+1.<label for="E-mail"><b>E-mail</b></label>
+
+<input type="text" id="E-mail" title="Your E-mail is required" required=""><br><br>
+
+
+
+2.<label for="Gender"><b>Gender</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="gender" value="Male" id="gender">Male<br>
+<input type="radio" name="gender" value="Female" id="gender">Female<br>
+<input type="radio" name="gender" value="Other" id="gender">Other<br>
+
+3.<label for="bdate "><b>birth date:</b></label><br><br>
+<label for="bdateing "><i>Date</i></label><br>
+<form id="bdate" required="">
+<select id="bdating">
+<option value="Select date" default="">Select date</option>
+<option value="01">01</option>
+<option value="02">02</option>
+<option value="03">03</option>
+<option value="04">04</option>
+<option value="05">05</option>
+<option value="06">06</option>
+<option value="07">07</option>
+<option value="08">08</option>
+<option value="09">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select><br>
+
+ <label for="bmonth"><i>Month</i><br></label>
+
+<select id="bmonth">
+<option value="Select Month" default="">Select Month</option>
+<option value="January">January</option>
+<option value="February">February</option>
+<option value="March">March</option>
+<option value="April">April</option>
+<option value="May">May</option>
+<option value="June">June</option>
+<option value="July">July</option>
+<option value="August">August</option>
+<option value="September">September</option>
+<option value="October">October</option>
+<option value="November">November</option>
+<option value="December">December</option>
+</select><br>
+
+ <label for="year"><i>Year</i><br></label>
+
+<input type="number" name="year" id="year" required=""><br><br>
+
+</form><br>
+
+</action="http:></div>
+
+<button id="cnc"><a href="file:///C:/Users/User/Documents/indx.htm">cancel</a></button><a href="file:///C:/Users/User/Documents/indx.htm">
+</a><button id="nxt"><a href="file:///C:/Users/User/Documents/indx.htm"></a><a href="file:///C:/Users/User/Documents/password.htm">Next</a></button><a href="file:///C:/Users/User/Documents/password.htm">
+</a></fieldset><a href="file:///C:/Users/User/Documents/password.htm">
+
+
+
+<div id="message">
+  <h3>This form must contain the following:</h3>
+  <p id="E-mail" class="invalid">A <b>lowercase</b> letter</p>
+  <p id="Gender" class="invalid">A <b>capital (uppercase)</b> letter</p>
+  <p id="byear" class="invalid">A <b>1952-2023</b></p>
+  <p id="bdating" class="invalid">1-31</p>
+<p id="bmonth" class="invalid">January-December</p>
+</div>
+
+
+
+
+<script>
+var myInput = document.getElementById("E-mail");
+var myInput = document.getElementById("Gender");
+var select = document.getElementById("bdating");
+var select = document.getElementById("bmonth");
+var number = document.getElementById("byear");
+
+
+
+myInput.onblur = function() {
+  document.getElementById("message").style.display = "none";
+}
+myInput.onkeyup = function()
+
+
+
+{
+ 
+  var email = /[@]/g;
+  if(myInput.value.match(email)) {  
+    email.classList.remove("invalid");
+    email.classList.add("valid");
+  } else {
+    email.classList.remove("valid");
+    email.classList.add("invalid");
+  }
+
+
+  var gender = /[male]/g;
+  if(myInput.value.match(gender)) {  
+    number.classList.remove("invalid");
+    number.classList.add("invalid");
+  } else {
+    number.classList.remove("invalid");
+    number.classList.add("invalid");
+  }
+
+
+
+  var gender = /[female]/g;
+  if(myInput.value.match(gender)) {  
+    number.classList.remove("invalid");
+    number.classList.add("invalid");
+  } else {
+    number.classList.remove("invalid");
+    number.classList.add("invalid");
+  }
+
+
+  var gender = /[other]/g;
+  if(myInput.value.match(gender)) {  
+    number.classList.remove("invalid");
+    number.classList.add("invalid");
+  } else {
+    number.classList.remove("invalid");
+    number.classList.add("invalid");
+  }
+
+
+
+
+  var bdateing = /[01-31]/g;
+  if(myInput.value.match(bdating)) {  
+    number.classList.remove("invalid");
+    number.classList.add("invalid");
+  } else {
+    number.classList.remove("invalid");
+    number.classList.add("invalid");
+  }
+
+
+if(myInput.value.length >= o01) {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  } else {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  }
+ 
+
+if(myInput.value.length <= 31) {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  } else {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  }
+ 
+ 
+ var byear = /[01-2023]/g;
+  if(myInput.value.match(byear)) {  
+    number.classList.remove("invalid");
+    number.classList.add("invalid");
+  } else {
+    number.classList.remove("invalid");
+    number.classList.add("invalid");
+  }
+
+ if(myInput.value.length > 2023) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+
+
+ if(myInput.value.length <1956) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+
+}
+
+</script>
+
+
+
+</a></body></html>

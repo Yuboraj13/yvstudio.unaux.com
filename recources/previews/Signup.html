@@ -1,0 +1,161 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="manifest" href="/website/package-lock.json">
+<style>
+
+button{
+align-items:left;
+}
+button#nxt {
+background-color:lightblue;
+color:white;
+}
+select {
+background-color:lightgray;
+height: 40%;
+}
+input#date {
+width: 20%;
+height: 20%;
+}
+input#yer {
+width: 20%;
+height: 20%;
+}
+/* Style all input fields */
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Style the container for inputs */
+.container {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+</style>
+<title>Sign Up</title>
+</head>
+<body>
+<fieldset legend="Sign Up" aligen="center" width="300" height="300" required>
+<action="http://gmail.com">
+<form id="phn"></form>
+1.<b>E-mail:</b><br><br>
+<input type="text" required></input><br><br>
+2.<b>Gender:</b><br>
+<input type="radio" name="Male" value="Gender">Male</input<br><br>
+<input type="radio" name="Female" value="Gender">Female</input><br><br>
+<input type="radio" name="Other" value="Gender">Other</input><br><br>
+3.<b>birth date:</b><br><br>
+<i>Date</i><br>
+<form required>
+<select>
+<option value="Select date" default >Select date</option>
+<option value="01">01</option>
+<option value="02">02</option>
+<option value="03">03</option>
+<option value="04">04</option>
+<option value="05">05</option>
+<option value="06">06</option>
+<option value="07">07</option>
+<option value="08">08</option>
+<option value="09">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select><br>
+<i>Month</i><br>
+<select>
+<option value="Select Month" default >Select Month</option>
+<option value="January">January</option>
+<option value="February">February</option>
+<option value="March">March</option>
+<option value="April">April</option>
+<option value="May">May</option>
+<option value="June">June</option>
+<option value="Julay">Julay</option>
+<option value="Augaust">Augaust</option>
+<option value="September">September</option>
+<option value="October">October</option>
+<option value="November">November</option>
+<option value="December">December</option><br>
+</select><br>
+<i>year</i><br>
+<input type="number" name="year" value="year" id="yer" required></input><br><br>
+</form><br>
+
+<button id="cnc"><a href="indx.htm">cancel</button>
+<button id="nxt"><a href="C:\Users\User\Documents\password.htm">Next</button>
+</fieldset>
+</body>
+</html>
+
