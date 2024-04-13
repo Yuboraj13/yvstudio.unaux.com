@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Scale
+        </title>
+<meta name="author" content="Yuboraj">
+<meta name="keyword" content="web template,apps,android,windows,java">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="manifest" href="/website/package-lock.json">
+<link rel="stylesheet" href="/website/public/Styles/download.css">
+<link rel="stylesheet" href="/website/public/Downloads/Styles/scale.css">
+    </head>
+    <body style="background-color:rgb(25, 180, 207);">
+      <p id="header">Yv Studio</p>
+       <div id="menubar">
+        <table border="0" style="width:100%; height: 100px;">
+            <tr>
+                <td><a href="/website/index.html" target="_self">Home&nbsp;&nbsp;&nbsp;</a></td>
+                <td><a href="/website/src/template.html" target="_self">Web template</a></td>
+                <td><a href="/website/src/apps.html" target="_self">Apps corner</a></td>
+                <td><a href="/website/src/contacts.html" target="_self">Contacts</a></td>
+            </tr>
+        </table>
+    </div>
+    <div id="sider"></div>
+    <div id="body">
+    <div ><label for="HTML"><big>1.HTML Code</big></label>
+        <div id="content" style="align-self: center;">
+          <textarea name="" id="HTML" cols="40" rows="1" disabled>
+            <div class="box scale"></div>
+          </textarea><br>
+          <label for="CSS"><big>2.CSS Code</big></label><br>
+          <textarea name="CSS" id="CSS" cols="35" rows="15" disabled>.scale {
+            transform-origin: center;
+            animation: scale 1s ease-in-out alternate infinite;
+          }
+          
+          @keyframes scale {
+            from {
+              transform: scale(1);
+            }
+            to {
+              transform: scale(1.5);
+            }
+          }
+          
+          </textarea>
+        </div></div>     
+        <br>  
+          <div id="pre" title="preview"  >
+          <div class="box scale"><br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;It is scale animation example
+            <br><br>
+          </div>
+          
+<br>
+</div>
+<div><br>
+  How to use: <br><br>
+  1. Use this HTML code in your full coading <br><br>
+  2. Now use this CSS code. you can embed this into <code>
+    &lt;style&gt;&lt;/style&gt;</code> attribute or linking by <code>&lt;link&gt;</code> attribute. <br><br>
+    3. You can change speed by changing <code>animation: scale</code> value. <br><br>
+    4. You can change orentation by changing <code>scal()</code> value in <code>@keyframes</code> tag.
+
+</div>
+            <div style="float: left; margin-right: 40px;">
+                
+            <button title="Copy this code" id="dow" onclick="copyText()">
+                Copy text
+              </button><br><br>
+              
+              </div>
+    </div>
+<script>
+   function copyText() {
+    /* Get the text area */
+    var copyText = document.getElementById("CSS");
+  
+    /* Select the text area */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /* For mobile devices */
+  
+    /* Copy the text inside the text area */
+    document.execCommand("copy");
+  
+    /* Alert the copied text */
+    alert("Copied to clipboard: ");
+  }
+  function copyText() {
+    /* Get the text area */
+    var copyText = document.getElementById("HTML");
+  
+    /* Select the text area */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /* For mobile devices */
+  
+    /* Copy the text inside the text area */
+    document.execCommand("copy");
+  
+    /* Alert the copied text */
+    alert("Copied to clipboard: ");
+  }
+ 
+</script>
+  </body>
+</html>
