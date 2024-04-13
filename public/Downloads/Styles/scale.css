@@ -1,0 +1,13 @@
+.scale {
+  transform-origin: center;
+  animation: scale 1s ease-in-out alternate infinite;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}

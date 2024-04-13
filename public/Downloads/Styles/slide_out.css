@@ -1,0 +1,16 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: relative;
+  animation: slideout 1s ease-in-out forwards;
+}
+
+@keyframes slideout {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(100);
+  }
+}

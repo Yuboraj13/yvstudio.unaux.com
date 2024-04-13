@@ -1,0 +1,18 @@
+.rainbow {
+  background: linear-gradient(9deg,rgba(226, 230, 7, 0.486),rgb(7, 134, 156), violet, indigo, blue, green, yellow, orange, red,
+                              red,orange,yellow,green,blue,indigo,violet,rgb(7, 134, 156),rgba(266,230,7,0.486));
+  background-size: 1000% 100%;
+  animation: rainbow 1s alternate-reverse infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 00%;
+  }
+  50%{
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}

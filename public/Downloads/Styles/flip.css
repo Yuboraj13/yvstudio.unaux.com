@@ -1,0 +1,12 @@
+.flip {
+  animation: flip 1s ease-in-out infinite;
+}
+
+@keyframes flip {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}

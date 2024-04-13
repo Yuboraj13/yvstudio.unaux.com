@@ -1,0 +1,13 @@
+.color-change {
+  background-color: #007bff;
+  animation: colorChange 2s ease-in-out alternate infinite;
+}
+
+@keyframes colorChange {
+  from {
+    background-color: #007bff;
+  }
+  to {
+    background-color: #ff6347;
+  }
+}

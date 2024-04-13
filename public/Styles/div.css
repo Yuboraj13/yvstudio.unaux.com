@@ -1,0 +1,82 @@
+p#header{
+    font-family:Old English Text MT,Magneto,chiller,Blackadder ITC,Bradley Hand ITC,Freestyle Script;
+    text-align: center;
+    flex-wrap: wrap-reverse;
+    font-size:xxx-large
+}
+textarea{
+    margin-left: 200px;
+}
+button#submit{
+    width: 400px;
+    height: 50px;
+    padding-left: 3%;
+    text-align: left;
+}
+input[type=submit]{
+    margin-top: 20px;
+        width: 450px;
+        height: 50px;
+        padding-left: 3%;
+        text-align: left;
+    }
+table{
+    width:100%;
+    height: 40px;
+}
+td{
+    text-align:left;
+}
+div#menubar{
+    width:100%;
+    height: 100px;
+}
+/* 
+div#sider{
+    float: left;
+    width: 90px;
+    height: 1000px;
+    background-color:rgb(105, 197, 228);
+}*/
+div#main{
+    /* float: right; */
+    width: auto;
+    height: 1500px;
+    background-color:rgb(90, 176, 197);
+}
+div#footer{
+ background-color: black;
+ color: white;
+}
+body{
+    font-family: Times New Roman ;
+    font-weight: 400;
+    font-feature-settings:"case";
+    background-color: rgb(25, 180, 207);
+    
+}
+table#menubar2{
+    text-align:center;
+    width: 100%;
+    height:autopx;
+}
+button#dow{
+    float: right;
+}
+a{
+    color: black;
+}
+a#p{
+    color: rgb(255, 255, 255);
+}
+p#about{
+    margin-left: 20px;
+}
+/* img{
+    width: 16px;
+    height: 16px;
+} */
+img{
+    width:25px;
+    margin-bottom: -10px;
+}

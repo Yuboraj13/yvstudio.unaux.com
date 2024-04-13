@@ -1,0 +1,15 @@
+button{
+    width: 600px;
+    height: 40px;
+}
+img{
+    width:45px;
+}
+p#txt{
+    text-align: left;
+}
+input[type=submit]
+{
+    margin-left: 5%;
+    justify-items:flex-start;
+}
