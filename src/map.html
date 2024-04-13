@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Copy Button</title>
+</head>
+<body>
+
+<!-- Text area with the text to copy -->
+<textarea id="myTextarea" rows="4" cols="50">Text to copy</textarea>
+
+<!-- The button used to copy the text -->
+<button onclick="copyText()">Copy Text</button>
+
+<script>
+function copyText() {
+  /* Get the text area */
+  var copyText = document.getElementById("myTextarea");
+
+  /* Select the text area */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the text area */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
+}
+</script>
+
+</body>
+</html>
